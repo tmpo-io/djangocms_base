@@ -1,0 +1,9 @@
+{% raw %}
+{% load cms_tags static %}
+
+<section class="carousel-images" data-bview="Carousel">
+  {% for plugin in instance.child_plugin_instances %}
+  	{% render_plugin plugin %}
+	{% endfor %}
+</section>
+{% endraw %}
