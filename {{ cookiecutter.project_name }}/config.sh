@@ -2,4 +2,4 @@
 
 HOST=
 
-PROJECT={{ cookiecuter.project_name }}
+PROJECT={{ cookiecutter.project_name }}
