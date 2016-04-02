@@ -6,6 +6,6 @@ RUN pip install -r /requirements.txt
 
 WORKDIR /app
 
-CMD ["gunicorn", "{{ cookiecuter.project_name }}.wsgi", "-b", "0.0.0.0:8000", "-w", "1"]
+CMD ["gunicorn", "{{ cookiecutter.project_name }}.wsgi", "-b", "0.0.0.0:8000", "-w", "1"]
 
 EXPOSE 8000
