@@ -159,7 +159,6 @@ INSTALLED_APPS = (
     'opbeat.contrib.django',
     '{{ cookiecutter.project_name }}',
     '{{ cookiecutter.project_name }}cms',
-    # 'carousel',
 )
 
 MIGRATION_MODULES = {
