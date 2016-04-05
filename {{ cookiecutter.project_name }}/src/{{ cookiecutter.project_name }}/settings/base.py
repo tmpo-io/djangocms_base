@@ -147,6 +147,7 @@ INSTALLED_APPS = (
     'djangocms_googlemap',
     'djangocms_inherit',
     'djangocms_teaser',
+    'easy_thumbnails',
     'filer',
     'cmsplugin_filer_file',
     'cmsplugin_filer_folder',
@@ -159,6 +160,13 @@ INSTALLED_APPS = (
     'opbeat.contrib.django',
     '{{ cookiecutter.project_name }}',
     '{{ cookiecutter.project_name }}cms',
+)
+
+THUMBNAIL_PROCESSORS = (
+    'easy_thumbnails.processors.colorspace',
+    'easy_thumbnails.processors.autocrop',
+    'filer.thumbnail_processors.scale_and_crop_with_subject_location',
+    'easy_thumbnails.processors.filters',
 )
 
 MIGRATION_MODULES = {
